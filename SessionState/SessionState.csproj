@@ -69,8 +69,13 @@
   <ItemGroup>
     <Content Include="Cookies.aspx" />
     <Content Include="Default.aspx" />
+    <Content Include="FirstPage.aspx" />
     <Content Include="Global.aspx" />
+    <Content Include="Global2.aspx" />
+    <Content Include="Special.css" />
+    <Content Include="Standard.css" />
     <Content Include="Web.config" />
+    <Content Include="Welcome.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Cookies.aspx.cs">
@@ -87,6 +92,13 @@
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
+    <Compile Include="FirstPage.aspx.cs">
+      <DependentUpon>FirstPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FirstPage.aspx.designer.cs">
+      <DependentUpon>FirstPage.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Global.aspx.cs">
       <DependentUpon>Global.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -94,7 +106,21 @@
     <Compile Include="Global.aspx.designer.cs">
       <DependentUpon>Global.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Global2.aspx.cs">
+      <DependentUpon>Global2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Global2.aspx.designer.cs">
+      <DependentUpon>Global2.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Welcome.aspx.cs">
+      <DependentUpon>Welcome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Welcome.aspx.designer.cs">
+      <DependentUpon>Welcome.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

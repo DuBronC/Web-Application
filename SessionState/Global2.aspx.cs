@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace SessionState
 {
-    public partial class Global : System.Web.UI.Page
+    public partial class Global2 : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -42,35 +42,6 @@ namespace SessionState
                 // Update the visit time
                 Session["lastVisitTime"] = DateTime.Now;
             }
-             
-            if (themeCB.Checked)
-            {
-                HttpCookie themeCookie = new HttpCookie("ThemePreference");
-                themeCookie.Value = ddlTheme.SelectedValue;
-                themeCookie.Expires = DateTime.Now.AddDays(30);
-                Response.Cookies.Add(themeCookie);
-            }
-            else
-            {
-                if (Request.Cookies["ThemePreference"] != null)
-                {
-                    HttpCookie themeCookie = Request.Cookies["ThemePreference"];
-                    ddlTheme.SelectedValue = themeCookie.Value;
-                }
-            }
-
-
-
-        }
-
-        protected void ddlTheme_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        protected void themeCB_CheckedChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }

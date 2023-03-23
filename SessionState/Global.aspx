@@ -18,14 +18,17 @@
             <br />
             <br />
             Choose a theme:</div>
-        <asp:DropDownList ID="DropDownList1" runat="server" AutoPostBack="True">
+        <asp:DropDownList ID="ddlTheme" runat="server" AutoPostBack="True" OnSelectedIndexChanged="ddlTheme_SelectedIndexChanged">
             <asp:ListItem Value="Standard"></asp:ListItem>
             <asp:ListItem Value="Special"></asp:ListItem>
         </asp:DropDownList>
         <asp:Button ID="Button1" runat="server" Text="Apply" />
         <br />
         <br />
-        <asp:CheckBox ID="CheckBox1" runat="server" OnCheckedChanged="CheckBox1_CheckedChanged" Text="Remember preference" />
+        <asp:CheckBox ID="themeCB" runat="server" OnCheckedChanged="themeCB_CheckedChanged" Text="Remember preference" />
+        <br />
+        <br />
+        <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Global2.aspx">Next Page</asp:HyperLink>
     </form>
 </body>
 </html>
